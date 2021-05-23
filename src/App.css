@@ -1,0 +1,59 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1,h2{
+  text-align: center;
+}
+
+ul li{
+  list-style: none;
+}
+
+.main{
+  width: 900px;
+  margin: 40px auto;
+}
+.content{
+  padding: 50px;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.card{
+  border: 5px solid rgb(78, 63, 63);
+  border-radius: 50px;
+  background:rgba(255, 0, 0, 0.5);
+  box-shadow: 3px 3px 3px grey;
+  transition: all .5s ease-in-out;
+}
+
+.card_inner{
+  color: wheat;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+}
+
+span{
+  font-size: smaller;
+}
+
+.card:hover{
+  transform: scale(1.2);
+}
+
+@media(max-width:768px){
+  h1,h2{
+    width: 900px;
+    display: grid;
+    justify-content: center;
+  }
+}
